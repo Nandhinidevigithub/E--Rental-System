@@ -1,0 +1,146 @@
+<div class="image">
+<div class="container">
+    <h1>Update Vendor</h1>
+    
+    <a href="#" routerLink="/vendor/index" class="btn btn-primary">Back</a>
+           
+    <form [formGroup]="form" (ngSubmit)="submit()">
+   
+        <div class="form-group">
+            <label for="categoryId">categoryId:</label>
+            <input
+                formControlName="categoryId"
+                id="categoryId"
+                type="text"
+                class="form-control" [(ngModel)]="vendor.categoryId">
+            <div *ngIf="f['categoryId'].touched && f['categoryId'].invalid" class="alert alert-danger">
+                <div *ngIf="f['categoryId'].errors && f['categoryId'].errors['required']">categoryId is required.</div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="vendorName">vendor Name:</label>
+            <input
+                formControlName="vendorName"
+                id="vendorName"
+                type="text"
+                class="form-control"  [(ngModel)]="vendor.vendorName">
+            <div *ngIf="f['vendorName'].touched && f['vendorName'].invalid" class="alert alert-danger">
+                <div *ngIf="f['vendorName'].errors && f['vendorName'].errors['required']">vendor Name is required.</div>
+            </div>
+        </div>
+   
+        <div class="form-group">
+            <label for="vendorUsername">vendorUsername:</label>
+            <input
+                formControlName="vendorUsername"
+                id="vendorUsername"
+                type="text"
+                class="form-control" [(ngModel)]="vendor.vendorUsername">
+            <div *ngIf="f['vendorUsername'].touched && f['vendorUsername'].invalid" class="alert alert-danger">
+                <div *ngIf="f['vendorUsername'].errors && f['vendorUsername'].errors['required']">vendorUsername is required.</div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="vpwd">Vendor Password:</label>
+            <input
+                formControlName="vpwd"
+                id="vpwd"
+                type="text"
+                class="form-control" [(ngModel)]="vendor.vpwd">
+            <div *ngIf="f['vpwd'].touched && f['vpwd'].invalid" class="alert alert-danger">
+                <div *ngIf="f['vpwd'].errors && f['vpwd'].errors['required']">Vendor Password is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="vendorPhone">vendorPhone:</label>
+            <input
+                formControlName="vendorPhone"
+                id="vendorPhone"
+                type="text"
+                class="form-control" [(ngModel)]="vendor.vendorPhone">
+            <div *ngIf="f['vendorPhone'].touched && f['vendorPhone'].invalid" class="alert alert-danger">
+                <div *ngIf="f['vendorPhone'].errors && f['vendorPhone'].errors['required']">vendorPhone is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="vendorEmail">vendorEmail:</label>
+            <input
+                formControlName="vendorEmail"
+                id="vendorEmail"
+                type="text"
+                class="form-control" [(ngModel)]="vendor.vendorEmail">
+            <div *ngIf="f['vendorEmail'].touched && f['vendorEmail'].invalid" class="alert alert-danger">
+                <div *ngIf="f['vendorEmail'].errors && f['vendorEmail'].errors['required']">vendorEmail is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="vendorAddress">vendorAddress:</label>
+            <input
+                formControlName="vendorAddress"
+                id="vendorAddress"
+                type="text"
+                class="form-control" [(ngModel)]="vendor.vendorAddress">
+            <div *ngIf="f['vendorAddress'].touched && f['vendorAddress'].invalid" class="alert alert-danger">
+                <div *ngIf="f['vendorAddress'].errors && f['vendorAddress'].errors['required']">vendorAddress is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="vendorCity">vendorCity:</label>
+            <input
+                formControlName="vendorCity"
+                id="vendorCity"
+                type="text"
+                class="form-control" [(ngModel)]="vendor.vendorCity">
+            <div *ngIf="f['vendorCity'].touched && f['vendorCity'].invalid" class="alert alert-danger">
+                <div *ngIf="f['vendorCity'].errors && f['vendorCity'].errors['required']">vendorCity is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="vendorState">vendorState:</label>
+            <input
+                formControlName="vendorState"
+                id="vendorState"
+                type="text"
+                class="form-control" [(ngModel)]="vendor.vendorState">
+            <div *ngIf="f['vendorState'].touched && f['vendorState'].invalid" class="alert alert-danger">
+                <div *ngIf="f['vendorState'].errors && f['vendorState'].errors['required']">vendorState is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="vendorPincode">vendorPincode:</label>
+            <input
+                formControlName="vendorPincode"
+                id="vendorPincode"
+                type="text"
+                class="form-control" [(ngModel)]="vendor.vendorPincode">
+            <div *ngIf="f['vendorPincode'].touched && f['vendorPincode'].invalid" class="alert alert-danger">
+                <div *ngIf="f['vendorPincode'].errors && f['vendorPincode'].errors['required']">Product Name is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="vendorAccountBalance">vendorAccountBalance:</label>
+            <input
+                formControlName="vendorAccountBalance"
+                id="vendorAccountBalance"
+                type="text"
+                class="form-control" [(ngModel)]="vendor.vendorAccountBalance">
+            <div *ngIf="f['vendorAccountBalance'].touched && f['vendorAccountBalance'].invalid" class="alert alert-danger">
+                <div *ngIf="f['vendorAccountBalance'].errors && f['vendorAccountBalance'].errors['required']">vendorAccountBalance is required.</div>
+            </div>
+        </div>
+   
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
+    </form>
+</div>
+</div>

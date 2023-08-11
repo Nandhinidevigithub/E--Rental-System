@@ -1,0 +1,49 @@
+.image{
+    height:60em; background-size:cover; width:auto;
+    background-image:url('src\assets\Images\Capture.PNG');
+    background-position:50% 50%;
+  }
+  .container{
+    padding: 40px 9%;
+    padding-bottom: 50px;
+  }
+  .container .btn{
+   margin-top: 10px;
+     display: inline-block;
+     background: #20b2aa;
+     color: #004040;
+     font-size: 17px;
+     border-radius: 5px;
+     padding: 8px 20px;
+     align-items: center;
+  }
+  .container .box-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px, 2fr));
+      gap:25px;
+   }
+   .container .box-container .box{
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      border-radius: 20px;
+      background: #fff;
+      text-align: left;
+      padding: 15px 20px;
+   }
+   .container .box-container .box .btn{
+     margin-right: 25px;
+     margin-top: 10px;
+     display: inline-block;
+     background: #20b2aa;
+     color: #004040;
+     font-size: 17px;
+     border-radius: 5px;
+     padding: 8px 20px;
+     align-items: center;
+  }
+   .container .box-container .box .btn:hover{
+     letter-spacing: 1px;
+  }
+   .container .box-container .box:hover{
+     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+     transform: scale(1.1);
+  }

@@ -1,0 +1,22 @@
+<div class="image">
+  <div class="container">
+      <h1>Vendor Details</h1>
+     
+      <a href="#" routerLink="/vendor/create" class="btn">Create New Vendor</a><br><br>
+          <div class="box-container">
+            <tr *ngFor="let vend of vendors">
+            <div class="box">
+                <h5 style="color:black;">Vendor Name:<span style="color: lightseagreen;">{{ vend.vendorName }}</span></h5>
+                <h5 style="color:black;">Vendor PhoneNo:<span style="color: lightseagreen;">{{ vend.vendorPhone}}</span></h5>
+                <h5 style="color:black;">Vendor Email: <span style="color: lightseagreen;"> {{ vend.vendorEmail }}</span></h5>
+                <h5 style="color:black;">Vendor Address: <span style="color: lightseagreen;">{{ vend.vendorAddress }}</span></h5>
+                <a href="#" [routerLink]="['/vendor/', vend.vendorId, 'view']" class="btn">View</a>
+                <a href="#" [routerLink]="['/vendor/',  vend.vendorId, 'edit']" class="btn">Edit</a>
+                <button type="button" (click)="deletePost( vend.vendorId)" class="btn">Delete</button>
+                <br>
+            </div>
+            </tr> 
+          </div>     
+   </div>
+</div>
+  
